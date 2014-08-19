@@ -34,7 +34,7 @@ Quick usage:
 	
 	Class_Console() ; add default console to your script
 	console.show()	; show defauft console
-	console.log(var or Object) ; show content of Vvariable or Object
+	console.log(var or Object) ; show content of Variable or Object
 
 	type help + enter in the cmdbar for more info
 
@@ -219,9 +219,8 @@ class console
 			 	{
 			 	 StringReplace, textAppend, A_LoopField, <,&lt;, All
 				 StringReplace, textAppend, textAppend, >,&gt;, All
-				 StringReplace, textAppend, textAppend, &lt;span class=Console_DebugID_array&gt;[</span&gt;&lt;em&gt;,<span class=Console_DebugID_array>[</span><em>, All
-				 StringReplace, textAppend, textAppend, &lt;span class=Console_DebugID_array&gt;[&lt;/span&gt;&lt;em&gt;,<span class=Console_DebugID_array>[</span><em>, All
-				 StringReplace, textAppend, textAppend, &lt;/em&gt;&lt;span class=Console_DebugID_array&gt;]&lt;/span&gt;,</em><span class=Console_DebugID_array>]</span>, All
+				 StringReplace, textAppend, textAppend, &lt;span&nbsp;class=Console_DebugID_array&gt;[&lt;/span&gt;&lt;em&gt;,<span class=Console_DebugID_array>[</span><em>, All
+				 StringReplace, textAppend, textAppend, &lt;/em&gt;&lt;span&nbsp;class=Console_DebugID_array&gt;]&lt;/span&gt;,</em><span class=Console_DebugID_array>]</span>, All
 				}
 			 Else
 			 	textAppend:=A_LoopField	 
