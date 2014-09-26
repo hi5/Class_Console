@@ -6,7 +6,7 @@ Purpose:
 
 Authors:
 
-> [AfterLemon](https://github.com/AfterLemon/) [tidbit](https://github.com/acorns/)
+> [@AfterLemon](https://github.com/AfterLemon/) and [@tidbit](https://github.com/acorns/)
 
 License:
 
@@ -14,7 +14,7 @@ License:
 
 Forked from:
 
-> <https://github.com/AfterLemon/Class_Console>
+> <https://github.com/AfterLemon/Class_Console> - See [changelog](#changelog-fork-19) for background info of this fork
 
 AHKScript:
 
@@ -30,6 +30,7 @@ Class_Console(Name,x,y,w,h [,GuiTitle,Timestamp,HTML,Font,Fontsize])
 Class_Console() 
 
    ```   
+
 ## Methods:
 
 ### console.append([text,delim,justify,pad,colsep])
@@ -293,3 +294,16 @@ a.destroy()
 
 ; Permenantly destroy the "a." console. It'll need to be recreated for further use.
    ```
+
+### Changelog Fork 1.9+
+
+Ensure variables and objects with HTML content is displayed as "RAW" html
+because the contents of variables and texts is displayed in a HTML control
+html tags were invisible which was problematic for my personal use
+
+Changes made:
+
+- All CSS classes now have Console_DebugID_ prefix
+- Escape <> HTML tags to \&lt; \&gt; in variables & objects displayed by Log, Append, Prepend functions
+- Added color styling to Object display
+- Default name and position of size & size of Console
